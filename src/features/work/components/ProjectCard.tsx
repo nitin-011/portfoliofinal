@@ -63,7 +63,7 @@ export const ProjectCard = memo(function ProjectCard({
             src={project.image}
             alt={`${project.headline} project preview`}
             className={cn(
-              'relative h-full w-full object-cover transition-all duration-700',
+              'relative h-full w-full object-cover object-top transition-all duration-700',
               isLoaded ? 'opacity-100' : 'opacity-0'
             )}
             loading="lazy"

@@ -12,12 +12,12 @@ export const TEAM_SECTION = {
   },
   mentor: {
     sectionTag: 'MENTOR & GUIDING FORCE',
-    id: 'neelam',
-    name: 'Dr. Neelam Goel',
+    id: 'neema',
+    name: 'Neema',
     role: 'MENTOR',
     bio: 'Guiding our vision, strategy, and commitment to excellence.',
     quote: 'Great products are built when clarity meets commitment.',
-    image: '/team/neelam.jpg',
+    image: '/team/neema.jpg',
   },
 
   engineeringBlock: {
@@ -102,6 +102,15 @@ export const TEAM_SECTION = {
       ],
     },
   ],
+  workplaceTag: 'OUR WORKPLACE',
+  workplace: {
+    title: 'Life at Atior Workspace',
+    subtitle: 'An environment designed for innovation, collaboration, and high-impact engineering.',
+    description:
+      'Our physical workspace is built to foster high communication bandwidth, creative brainstorms, and focused deep work. From sprint planning sessions to team alignment, this is where ideas transform into products.',
+    image: '/office.jpeg',
+    tags: ['Collaborative Hub', 'Modern Tech Setup', 'Agile Mindset', 'Growth Culture'],
+  },
   trustStatement:
     'Exceptional products are not the work of isolated talent. They emerge from teams with clear ownership, disciplined execution, and a shared commitment to engineering excellence.',
 };

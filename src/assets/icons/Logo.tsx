@@ -21,7 +21,7 @@ export const Logo = memo(function Logo({
       aria-label={NAV_CONFIG.logo.ariaLabel}
       className={`inline-flex items-center ${className}`}
     >
-      <span className={`font-anton text-[0.98rem] font-medium uppercase tracking-[0.28em] transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${textColor}`}>
+      <span className={`font-glacial text-[0.98rem] font-normal uppercase tracking-[0.28em] transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)] ${textColor}`}>
         {NAV_CONFIG.logo.alt}
       </span>
     </a>

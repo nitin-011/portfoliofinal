@@ -48,7 +48,7 @@ export const NavLink = memo(function NavLink({
       aria-label={ariaLabel}
       aria-current={isActive ? 'page' : undefined}
       className={cn(
-        'relative px-2 py-2 text-[0.72rem] font-anton font-medium uppercase tracking-[0.18em] transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]',
+        'group relative px-2 py-2 text-sm font-glacial font-normal uppercase tracking-[0.1em] transition-colors duration-300 ease-[cubic-bezier(0.4,0,0.2,1)]',
         textColor,
         hoverColor
       )}

@@ -14,18 +14,21 @@ export const MemberCard = memo(function MemberCard({ member, isFeatured = false 
     <motion.div
       whileHover={{ y: -4 }}
       transition={{ duration: 0.2 }}
-      className={`relative flex flex-col items-center text-center rounded-3xl bg-white border border-[#EAE4D8] p-5 sm:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(212,175,55,0.12)] transition-all duration-300 ${
-        isFeatured ? 'w-full h-full justify-between' : 'flex-1 min-w-[180px] h-full justify-between'
-      }`}
+      className={`relative flex flex-col items-center text-center rounded-3xl bg-white border border-[#EAE4D8] p-5 sm:p-6 shadow-[0_10px_30px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(212,175,55,0.12)] transition-all duration-300 ${isFeatured ? 'w-full h-full justify-between' : 'flex-1 min-w-[180px] h-full justify-between'
+        }`}
     >
       <div className="flex flex-col items-center w-full">
         {/* Avatar Container with Shield Badge */}
         <div className="relative mb-4">
-          <div className="relative h-24 w-24 sm:h-28 sm:w-28 rounded-full overflow-hidden border-2 border-amber-300/40 p-1 bg-amber-50/50">
+          <div
+            className={`relative rounded-full overflow-hidden border-2 border-amber-300/60 p-1 bg-gradient-to-br from-amber-100/40 to-amber-50 shadow-sm ${
+              isFeatured ? 'h-28 w-28 sm:h-32 sm:w-32 ring-4 ring-amber-400/20' : 'h-24 w-24 sm:h-28 sm:w-28'
+            }`}
+          >
             <img
               src={member.image}
               alt={member.name}
-              className="h-full w-full rounded-full object-cover"
+              className="h-full w-full rounded-full object-cover object-top"
             />
           </div>
           {/* Shield Icon Badge */}

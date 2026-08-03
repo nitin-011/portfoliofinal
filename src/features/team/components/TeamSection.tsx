@@ -6,6 +6,7 @@ import { TEAM_SECTION, TEAM_COLORS } from '@/constants/team';
 import { SectionHeaderTag } from './SectionHeaderTag';
 import { MemberCard } from './MemberCard';
 import { CoreTeamCard } from './CoreTeamCard';
+import { WorkplaceCard } from './WorkplaceCard';
 import { useReducedMotion } from '@/hooks/use-reduced-motion';
 
 export const TeamSection = memo(function TeamSection() {
@@ -96,7 +97,7 @@ export const TeamSection = memo(function TeamSection() {
 
         </div>
 
-        {/* BOTTOM ROW: Our Core Teams */}
+        {/* MIDDLE ROW: Our Core Teams */}
         <div className="mt-16 sm:mt-24">
           <SectionHeaderTag label={TEAM_SECTION.coreTeamsTag} />
 
@@ -114,6 +115,20 @@ export const TeamSection = memo(function TeamSection() {
             ))}
           </div>
         </div>
+
+        {/* WORKPLACE LANDSCAPE SECTION */}
+        <motion.div
+          className="mt-16 sm:mt-24"
+          initial={reducedMotion ? undefined : { opacity: 0, y: 20 }}
+          whileInView={reducedMotion ? undefined : { opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: '-50px' }}
+          transition={{ duration: 0.6 }}
+        >
+          <SectionHeaderTag label={TEAM_SECTION.workplaceTag} />
+          <div className="mt-6">
+            <WorkplaceCard workplace={TEAM_SECTION.workplace} />
+          </div>
+        </motion.div>
 
         {/* Footer Quote Statement */}
         <motion.p

@@ -20,6 +20,9 @@ export interface Project {
   accent: ProjectAccent;
   seoTitle: string;
   seoDescription: string;
+  challenge?: string;
+  approach?: string;
+  results?: string;
 }
 
 export interface ScrollState {
