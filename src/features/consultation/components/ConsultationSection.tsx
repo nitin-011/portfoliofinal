@@ -85,7 +85,7 @@ export const ConsultationSection = memo(function ConsultationSection() {
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
           >
             <h2
-              id="testimonials-heading"
+              id="consultation-heading"
               className="mb-6 text-3xl font-galacial tracking-tight text-white sm:text-4xl lg:text-5xl"
             >
               Let's build your next  <span className="text-yellow-400">Product</span>

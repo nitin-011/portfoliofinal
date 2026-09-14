@@ -16,12 +16,6 @@ export const NAV_CONFIG: NavConfig = {
       target: '#our-team',
       ariaLabel: 'Navigate to Our Team section',
     },
-    {
-      id: 'testimonials',
-      label: 'Testimonials',
-      target: '#testimonials',
-      ariaLabel: 'Navigate to Testimonials section',
-    },
   ],
   cta: {
     label: 'Book a Discovery Call',
@@ -34,7 +28,7 @@ export const NAV_CONFIG: NavConfig = {
   },
 };
 
-export const SECTION_IDS = ['our-work', 'our-team', 'testimonials'] as const;
+export const SECTION_IDS = ['our-work', 'our-team'] as const;
 
 export const SCROLL_OFFSET = 80;
 

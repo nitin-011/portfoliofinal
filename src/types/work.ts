@@ -23,6 +23,8 @@ export interface Project {
   challenge?: string;
   approach?: string;
   results?: string;
+  tags?: string[];
+  link?: string;
 }
 
 export interface ScrollState {
